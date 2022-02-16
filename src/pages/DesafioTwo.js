@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import validatePassword from '../services/req02';
+import validatePassword from '../services/Password';
 import { Home, Header, Main, CardDesafios, CardDesafiosRespostas, Footer } from '../styles/styleHome';
 
 const DesafioTwo = () => {

@@ -1,5 +1,5 @@
-// const { anagrama } = require('../services/req03');
-/*
+const anagrama = require('../req03');
+
 const ovo = anagrama('ovo');
 const vovo = anagrama('vovo');
 const ifailuhkqq = anagrama('ifailuhkqq');
@@ -25,4 +25,3 @@ describe('Check the number of anagrams for', () => {
 
 
 
-*/

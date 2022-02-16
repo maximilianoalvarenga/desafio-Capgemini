@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import createLadder from '../services/req01';
+import createLadder from '../services/Escada';
 import { Home, Header, Main, CardDesafios, CardDesafiosRespostas, Footer } from '../styles/styleHome';
 
 const DesafioOne = () => {

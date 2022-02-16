@@ -68,10 +68,4 @@ const anagrama = ( word ) => {
     return sum;
 }
 
-module.exports = {
-    anagrama,
-    transformToVector,
-    invertVector,
-    findCharacterPairs,
-    sortVectors,
-};
+export{anagrama};

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import anagrama from '../services/req03';
+import {anagrama} from '../services/Anagrama';
 import { Home, Header, Main, CardDesafios, CardDesafiosRespostas, Footer } from '../styles/styleHome';
 
-const DesafioThree = () => {
+const DesafioThree = () => { 
     const [valueInput, setValueInput] = useState('');
     const [ quantidadeAnagramas, setQuantidadeAnagramas] = useState('');
 
