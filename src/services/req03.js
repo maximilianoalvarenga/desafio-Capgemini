@@ -1,4 +1,3 @@
-
 const transformToVector= (word) => {
     const wordSplit = [];
     let letter = '';
@@ -69,5 +68,10 @@ const anagrama = ( word ) => {
     return sum;
 }
 
-module.exports = anagrama;
-
+module.exports = {
+    anagrama,
+    transformToVector,
+    invertVector,
+    findCharacterPairs,
+    sortVectors,
+};
