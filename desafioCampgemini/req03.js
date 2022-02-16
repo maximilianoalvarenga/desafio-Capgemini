@@ -50,9 +50,9 @@ const sortVectors = (vector) => {
 }
 
 const anagrama = ( word ) => {
-    let sum = findCharacterPairs(word);
-    const transformation1 = transformToVector(word);
-    const transformation2 = invertVector(word);
+    let sum = findCharacterPairs(word.toLowerCase());
+    const transformation1 = transformToVector(word.toLowerCase());
+    const transformation2 = invertVector(word.toLowerCase());
     
     
     const vectorOneOrdered = sortVectors(transformation1);
