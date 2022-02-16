@@ -36,12 +36,6 @@ export const Main = styled.main`
 
 `;
 
-export const Footer = styled.footer`
-    height: 6%;
-    width: 100%;
-    background-color: #0070AD;
-`;
-
 export const Card = styled.div`
     width: 20%;
     height: 60%;

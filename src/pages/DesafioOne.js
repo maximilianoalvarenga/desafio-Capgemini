@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { Footer } from '../components/Footer';
 import createLadder from '../services/Escada';
-import { Home, Header, Main, CardDesafios, CardDesafiosRespostas, Footer } from '../styles/styleHome';
+import { Home, Header, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
 
 const DesafioOne = () => {
     const [valueInput, setValueInput] = useState('')
@@ -47,9 +48,7 @@ const DesafioOne = () => {
                     <ul>{escada.map((item) => <li>{`${item}`}</li>)}</ul>
                 </CardDesafiosRespostas>
             </Main>
-            <Footer>
-
-            </Footer>
+            <Footer />
         </Home>
     );
 }

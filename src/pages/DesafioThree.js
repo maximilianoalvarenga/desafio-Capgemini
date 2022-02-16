@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { Footer } from '../components/Footer';
 import {anagrama} from '../services/Anagrama';
-import { Home, Header, Main, CardDesafios, CardDesafiosRespostas, Footer } from '../styles/styleHome';
+import { Home, Header, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
 
 const DesafioThree = () => { 
     const [valueInput, setValueInput] = useState('');
@@ -46,9 +47,7 @@ const DesafioThree = () => {
                     </div>
                 </CardDesafiosRespostas>
             </Main>
-            <Footer>
-
-            </Footer>
+            <Footer />
         </Home>
     );
 }

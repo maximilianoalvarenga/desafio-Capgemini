@@ -1,6 +1,7 @@
 import { useNavigate} from 'react-router-dom';
+import { Footer } from '../components/Footer';
 
-import { Home, Header, Card, Main, Footer } from '../styles/styleHome';
+import { Home, Header, Card, Main } from '../styles/styleHome';
 
 const Homepage = () => {
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Homepage = () => {
                     <span>Anagrama</span>
                 </Card>
           </Main>
-          <Footer></Footer>
+          <Footer />
         </Home>
     );
 }

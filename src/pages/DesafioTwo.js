@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { Footer } from '../components/Footer';
 import validatePassword from '../services/Password';
-import { Home, Header, Main, CardDesafios, CardDesafiosRespostas, Footer } from '../styles/styleHome';
+import { Home, Header, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
 
 const DesafioTwo = () => {
     const [valueInput, setValueInput] = useState('');
@@ -66,9 +67,7 @@ const DesafioTwo = () => {
                     </div>
                 </CardDesafiosRespostas>
             </Main>
-            <Footer>
-
-            </Footer>
+            <Footer />
         </Home>
     );
 }
