@@ -10,6 +10,7 @@ const DesafioThree = () => {
 
     const limpar = () => {
         setValueInput('');
+        setQuantidadeAnagramas('')
     }
     
     const anagramas = () => {
@@ -40,10 +41,13 @@ const DesafioThree = () => {
                     </div>
                 </CardDesafios>
                 <CardDesafiosRespostas>
-                    <div className='password-resposta'>
-                        <span>Podem ser encontrados {`${quantidadeAnagramas} `}
-                        anagramas na palavra informada.</span>
-                    </div>
+                    {quantidadeAnagramas === '' ? <span></span> : (
+                        <div className='password-resposta'>
+                            <span>Podem ser encontrados {`${quantidadeAnagramas} `}
+                            anagramas na palavra informada.</span>
+                        </div>
+                    )}
+                    
                 </CardDesafiosRespostas>
             </Main>
             <Footer />

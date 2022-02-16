@@ -58,7 +58,7 @@ export const CardDesafios = styled.div`
 
     .enunciado {
         
-        width: 80%;
+        width: 90%;
         height: 25%;
         text-align: center;
         font-size: 1.2rem;
