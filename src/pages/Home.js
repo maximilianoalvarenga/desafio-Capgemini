@@ -1,29 +1,22 @@
 import { useNavigate} from 'react-router-dom';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { desafios } from '../services/desafios';
 
-import { Home, Header, Card, Main } from '../styles/styleHome';
+import { Home, Card, Main } from '../styles/styleHome';
 
 const Homepage = () => {
     const navigate = useNavigate();
-
     return (
         <Home>
-            <Header>
-                <span> Desafio Campgemini - Solução</span>
-            </Header>
+            <Header />
             <Main>
-                <Card onClick={ () => navigate('desafio-1') }>
-                    <span>Desafio 01</span>
-                    <span>Escada</span>
-                </Card>
-                <Card onClick={ () => navigate('desafio-2')}>
-                    <span>Desafio 02</span>
-                    <span>Senha</span>
-                </Card>
-                <Card onClick={ () => navigate('desafio-3')}>
-                    <span>Desafio 03</span>
-                    <span>Anagrama</span>
-                </Card>
+                {desafios.map((desafio) => (
+                    <Card onClick={ () => navigate(desafio.route) }>
+                        <span>{desafio.title}</span>
+                        <span>{desafio.name}</span>
+                    </Card>
+                ))}
           </Main>
           <Footer />
         </Home>

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 import {anagrama} from '../services/Anagrama';
-import { Home, Header, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
+import { Home, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
 
 const DesafioThree = () => { 
     const [valueInput, setValueInput] = useState('');
@@ -18,9 +19,7 @@ const DesafioThree = () => {
     }
     return(
         <Home>
-            <Header>
-                <span> Desafio Campgemini - Solução</span>
-            </Header>
+            <Header />
             <Main>
                 <CardDesafios>
                     <div className='enunciado'>

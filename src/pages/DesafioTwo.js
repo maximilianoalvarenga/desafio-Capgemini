@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 import validatePassword from '../services/Password';
-import { Home, Header, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
+import { Home, Main, CardDesafios, CardDesafiosRespostas } from '../styles/styleHome';
 
 const DesafioTwo = () => {
     const [valueInput, setValueInput] = useState('');
@@ -14,14 +15,12 @@ const DesafioTwo = () => {
 
     const limpar = () => {
         setValueInput('');
-        setCharFaltantes(6)
+        setCharFaltantes('')
     }
     
     return(
         <Home>
-            <Header>
-                <span> Desafio Campgemini - Solução</span>
-            </Header>
+            <Header />
             <Main>
                 <CardDesafios>
                     <div className='enunciado'>
@@ -48,7 +47,7 @@ const DesafioTwo = () => {
                             Parabéns, sua senha senha é forte o suficiente,
                             falta satisfazer 0 critérios.
                         </span>
-                        ) :  (
+                        ) :  charFaltantes > 0 ?(
                             <>
                                 <span>
                                     Sua senha não é forte o suficiente, falta satisfazer {`${charFaltantes} `}
@@ -63,7 +62,7 @@ const DesafioTwo = () => {
                                 </ul>
                             </>
                             
-                        )}
+                        ) : <span></span>}
                     </div>
                 </CardDesafiosRespostas>
             </Main>
