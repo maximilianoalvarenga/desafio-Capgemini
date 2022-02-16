@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/desafio-capgemini/static/css/main.073c9b0a.css",
-    "main.js": "/desafio-capgemini/static/js/main.d7ae7872.js",
-    "static/js/787.9d0618a6.chunk.js": "/desafio-capgemini/static/js/787.9d0618a6.chunk.js",
-    "static/media/logo.svg": "/desafio-capgemini/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/desafio-capgemini/static/css/main.e6c13ad2.css",
+    "main.js": "/desafio-capgemini/static/js/main.790570df.js",
     "index.html": "/desafio-capgemini/index.html",
-    "main.073c9b0a.css.map": "/desafio-capgemini/static/css/main.073c9b0a.css.map",
-    "main.d7ae7872.js.map": "/desafio-capgemini/static/js/main.d7ae7872.js.map",
-    "787.9d0618a6.chunk.js.map": "/desafio-capgemini/static/js/787.9d0618a6.chunk.js.map"
+    "main.e6c13ad2.css.map": "/desafio-capgemini/static/css/main.e6c13ad2.css.map",
+    "main.790570df.js.map": "/desafio-capgemini/static/js/main.790570df.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d7ae7872.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.790570df.js"
   ]
 }
