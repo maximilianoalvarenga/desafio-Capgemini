@@ -1,4 +1,4 @@
-const createLadder = require('../req01');
+const createLadder = require('../services/req01');
 
 const sixSteps = createLadder(6);
 const oneHundredSteps = createLadder(100);

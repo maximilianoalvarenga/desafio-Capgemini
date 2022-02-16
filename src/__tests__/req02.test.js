@@ -1,4 +1,4 @@
-const verifyPassword = require('../req02');
+const verifyPassword = require('../services/req02');
 
 const password1 = verifyPassword('');
 const password2 = verifyPassword('a');

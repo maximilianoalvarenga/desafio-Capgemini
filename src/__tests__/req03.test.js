@@ -1,4 +1,4 @@
-const anagrama = require('../req03');
+const anagrama = require('../services/req03');
 
 const ovo = anagrama('ovo');
 const vovo = anagrama('vovo');
