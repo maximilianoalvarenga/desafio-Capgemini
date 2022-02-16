@@ -44,7 +44,7 @@ const DesafioThree = () => {
                     {quantidadeAnagramas === '' ? <span></span> : (
                         <div className='password-resposta'>
                             <span>Podem ser encontrados {`${quantidadeAnagramas} `}
-                            anagramas na palavra informada.</span>
+                            par(es) de anagramas na palavra informada.</span>
                         </div>
                     )}
                     
