@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Boas vindas ao repositório do Desafio Capgemini!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O objetivo dessa etapa é testar os conhecimentos em lógica de programação. Para isso, foi apresentada três questões com diferentes níveis de dificuldade. A resoluçao das questões foi feita em Javascript e os testes realizados com o Jest.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# Sumário
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Instruções para rodar a aplicação](#instruções-para-rodar-a-aplicação)
+  - [Antes de começar a testar](#antes-de-começar-a-testar)
+  - [Execução de testes unitários](#execução-de-testes-unitários)
+  - [Execução de testes de usabilidade](#execução-de-testes-de-usabilidade)
 
-### `npm start`
+# Tecnologias utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para a resolução dos desafios propostos foram utilizados:
+ - [Javascript](https://nodejs.org/en/download/)
+ - [Jest](https://jestjs.io/pt-BR/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para a implementação do frontend de teste de usabilidade, foram utilizados:
 
-### `npm test`
+  - [React](https://pt-br.reactjs.org/) para a criação das interfaces;
+  - [React Router](https://pt-br.reactjs.org/) para o roteamento entre as interfaces;
+  - [Styled Components](https://styled-components.com/) para a estilização das interfaces;
+  - [GitHub Pages](https://github.com/gitname/react-gh-pages) para disponibilizar o frontend em produção no Github;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Instruções para rodar a aplicação:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ANTES DE COMEÇAR A TESTAR:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Certifique de conter o node instalado em sua maquina
+    ```sh
+    node --version
+    ```
+    * Caso não retorne algum resultado ou retorne um erro, instalar por meio official do [Node](https://nodejs.org/en/download/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Clone o repositório
+    ```sh
+    git clone https://github.com/maximilianoalvarenga/desafio-capgemini.git
+    ```
+  * Entre na pasta do repositório que você acabou de clonar:
+    ```sh
+    cd desafio-capgemini
+    ```
 
-### `npm run eject`
+3. Instale as dependências
+    ```sh
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Execução de testes unitários
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Foi utilizado o Jest para criar os testes, use o comando a seguir para executar todos os testes: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+npm test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Caso queira executar só um arquivo de test use o seguinte comando, considerado que quer testar o arquivo `desafioCampgemini/__tests__/req01.test.js`:
 
-## Learn More
+```sh
+npm test desafioCampgemini/__tests__/req01.test.js
+```
+ou
+```sh
+npm test req01
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Execução de testes de usabilidade
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Foi construido uma aplicação em [React Js](https://pt-br.reactjs.org/) para a realização dos testes de usabilidade e/ou execução dos desafios de modo livre.
 
-### Code Splitting
+Caso queira executar os testes de usabilidades, é necessário rodar a aplicação localmente por meio do comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm start
+```
 
-### Analyzing the Bundle Size
+ou, acessar a aplicação disponibilizada no Github pages por meio do link:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  * [Desafio Campgemini](https://maximilianoalvarenga.github.io/desafio-capgemini/)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
